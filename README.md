@@ -28,10 +28,16 @@ docker exec -it test bash
 ros2 run demo_nodes_py listener
 ```
 # use image
-basic usage of conteiner from image.
+basic usage of conteiner from image.  
+make container
 ```bash
 docker run -it --name <container_name> ros2_jazzy
 ```
+start container
+```bash
+docker start -ai <container_name>
+```
+enter container
 ```bash
 docker exec -it <container_name> bash
 ```
