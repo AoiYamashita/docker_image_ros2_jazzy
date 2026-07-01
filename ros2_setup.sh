@@ -14,3 +14,6 @@ apt update && apt upgrade -y
 apt install -y ros-jazzy-desktop
 
 echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+
+rosdep init
+rosdep update
